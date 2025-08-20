@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Form</title>
+  <link rel="stylesheet" href="form.css"> <!-- External CSS -->
+</head>
+<body>
+
+  <h2>Contact Us</h2>
+
+  <form id="contactForm">
+    <div class="form-group">
+      <label for="name">Name:</label><br>
+      <input type="text"  class="input-field" pattern=[a-zA-Z]{3,10} />
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" class="input-field" required>
+    </div>
+
+    <div class="form-group">
+      <label for="message">Message:</label><br>
+      <textarea id="message" class="input-field"  cols="52" minlength="10" maxlength="200"required></textarea>
+    </div>
+
+    <button type="submit" id="submitBtn">Submit</button>
+  </form>
+
+</body>
+</html>
